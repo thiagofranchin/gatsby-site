@@ -17,18 +17,18 @@ const Contact = () => {
             <p>{ text }</p>
           </div>
           <div className="col-md-6 mb-5">
-          <form name="contact" method="POST" data-netlify="true">
-            <div className="form-group">
-              <input name="name" type="text" className="form-control" id="exampleInputName" placeholder="Name" />
-            </div>
-            <div className="form-group">
-              <input name="email" type="email" className="form-control" id="exampleInputEmail" placeholder="E-mail" />
-            </div>
-            <div className="form-group">
-              <textarea name="message" className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Textarea"></textarea>
-            </div>
-            <button type="submit" className="btn btn-gatsby">Send</button>
-          </form>
+            <form name="contact" method="post" netlify>
+              <div className="form-group">
+                <input name="name" type="text" className="form-control" id="exampleInputName" placeholder="Name" />
+              </div>
+              <div className="form-group">
+                <input name="email" type="email" className="form-control" id="exampleInputEmail" placeholder="E-mail" />
+              </div>
+              <div className="form-group">
+                <textarea name="message" className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Textarea"></textarea>
+              </div>
+              <button type="submit" className="btn btn-gatsby">Send</button>
+            </form>
           </div>
           <div className="col-md-6">
           <ul className="list-group">
