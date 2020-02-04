@@ -18,7 +18,7 @@ const Contact = () => {
           </div>
           <div className="col-md-6 mb-5">
             <h3>contact</h3>
-            <h3>Sem Netlify + input hidden + action=success</h3>
+            <h3>input hidden + action=success</h3>
             <form name="contact" method="post" action="/success">
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-group">
@@ -37,7 +37,7 @@ const Contact = () => {
 
           <div className="col-md-6 mb-5">
             <h3>contact2</h3>
-            <h3>Tag Netlify + input hidden</h3>
+            <h3>input hidden</h3>
             <form name="contact2" method="post">
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-group">
@@ -55,8 +55,9 @@ const Contact = () => {
 
           <div className="col-md-6 mb-5">
             <h3>contact3</h3>
-            <h3>Tag Netlify + action=success</h3>
-            <form name="contact3" method="post" action="/success" netlify>
+            <h3>Tag data-netlify + input hidden</h3>
+            <form name="contact3" method="post" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
               <div className="form-group">
                 <input name="name" type="text" className="form-control" id="exampleInputName" placeholder="Name" />
               </div>
@@ -72,8 +73,9 @@ const Contact = () => {
 
           <div className="col-md-6 mb-5">
             <h3>contact4</h3>
-            <h3>Apenas com a Tag Netlify</h3>
-            <form name="contact4" method="post" netlify>
+            <h3>Tag data-netlify + input hidden + success</h3>
+            <form name="contact4" method="post" data-netlify="true" action="/success">
+              <input type="hidden" name="form-name" value="contact" />
               <div className="form-group">
                 <input name="name" type="text" className="form-control" id="exampleInputName" placeholder="Name" />
               </div>
@@ -89,8 +91,9 @@ const Contact = () => {
 
           <div className="col-md-6 mb-5">
             <h3>contact5</h3>
-            <h3>Apenas com a Tag data-netlify</h3>
-            <form name="contact5" method="post" data-netlify="true">
+            <h3>Only input hidden complete</h3>
+            <form name="contact5" method="post">
+              <input type="hidden" name="contact5" value="contact" />
               <div className="form-group">
                 <input name="name" type="text" className="form-control" id="exampleInputName" placeholder="Name" />
               </div>
@@ -106,9 +109,9 @@ const Contact = () => {
 
           <div className="col-md-6 mb-5">
             <h3>contact6</h3>
-            <h3>Tag data-netlify + input hidden</h3>
-            <form name="contact6" method="post" data-netlify="true">
-              <input type="hidden" name="form-name" value="contact" />
+            <h3>input hidden solo</h3>
+            <form name="contact6" method="post">
+              <input type="hidden" />
               <div className="form-group">
                 <input name="name" type="text" className="form-control" id="exampleInputName" placeholder="Name" />
               </div>
@@ -124,9 +127,8 @@ const Contact = () => {
 
           <div className="col-md-6 mb-5">
             <h3>contact7</h3>
-            <h3>Recaptcha + Tag data-netlify + input hidden + success</h3>
-            <form name="contact7" method="post" data-netlify="true">s
-              <input type="hidden" name="form-name" value="contact" />
+            <h3>CLEAR</h3>
+            <form name="contact7" method="post">
               <div className="form-group">
                 <input name="name" type="text" className="form-control" id="exampleInputName" placeholder="Name" />
               </div>
@@ -136,25 +138,6 @@ const Contact = () => {
               <div className="form-group">
                 <textarea name="message" className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Textarea"></textarea>
               </div>
-              <div data-netlify-recaptcha="true"></div>
-              <button type="submit" className="btn btn-gatsby">Send</button>
-            </form>
-          </div>
-
-          <div className="col-md-6 mb-5">
-            <h3>contact8</h3>
-            <h3>Recaptcha + Tag data-netlify + Action=POST</h3>
-            <form name="contact8" action="POST" data-netlify="true">
-              <div className="form-group">
-                <input name="name" type="text" className="form-control" id="exampleInputName" placeholder="Name" />
-              </div>
-              <div className="form-group">
-                <input name="email" type="email" className="form-control" id="exampleInputEmail" placeholder="E-mail" />
-              </div>
-              <div className="form-group">
-                <textarea name="message" className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Textarea"></textarea>
-              </div>
-              <div data-netlify-recaptcha="true"></div>
               <button type="submit" className="btn btn-gatsby">Send</button>
             </form>
           </div>
