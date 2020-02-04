@@ -17,7 +17,8 @@ const Contact = () => {
             <p>{ text }</p>
           </div>
           <div className="col-md-6 mb-5">
-            <form name="contact" method="post" netlify>
+            <form name="contact" method="post" action="/success">
+              <input type="hidden" name="form-name" value="contact" />
               <div className="form-group">
                 <input name="name" type="text" className="form-control" id="exampleInputName" placeholder="Name" />
               </div>
