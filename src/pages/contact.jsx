@@ -19,7 +19,7 @@ const Contact = () => {
           <div className="col-md-6 mb-5">
             <h3>contact</h3>
             <h3>input hidden + action=success</h3>
-            <form name="contact" method="post" action="/success">
+            <form name="contact" method="post" action="/success/">
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-group">
                 <input name="name" type="text" className="form-control" id="exampleInputName" placeholder="Name" />
@@ -74,7 +74,7 @@ const Contact = () => {
           <div className="col-md-6 mb-5">
             <h3>contact4</h3>
             <h3>Tag data-netlify + input hidden + success</h3>
-            <form name="contact4" method="post" data-netlify="true" action="/success">
+            <form name="contact4" method="post" data-netlify="true" action="/success/">
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-group">
                 <input name="name" type="text" className="form-control" id="exampleInputName" placeholder="Name" />
