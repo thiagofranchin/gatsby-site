@@ -72,6 +72,23 @@ const Contact = () => {
           </div>
 
           <div className="col-md-6 mb-5">
+            <h3>contact4/5</h3>
+            <h3>Tag data-netlify + success</h3>
+            <form name="contact45" method="post" data-netlify="true" action="/success/">
+              <div className="form-group">
+                <input name="name" type="text" className="form-control" id="exampleInputName" placeholder="Name" />
+              </div>
+              <div className="form-group">
+                <input name="email" type="email" className="form-control" id="exampleInputEmail" placeholder="E-mail" />
+              </div>
+              <div className="form-group">
+                <textarea name="message" className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Textarea"></textarea>
+              </div>
+              <button type="submit" className="btn btn-gatsby">Send</button>
+            </form>
+          </div>
+
+          <div className="col-md-6 mb-5">
             <h3>contact4</h3>
             <h3>Tag data-netlify + input hidden + success</h3>
             <form name="contact4" method="post" data-netlify="true" action="/success/">
