@@ -17,6 +17,24 @@ const Contact = () => {
             <p>{ text }</p>
           </div>
           <div className="col-md-6 mb-5">
+            <h3>Formulário de la verdá</h3>
+            <h3>Tag data-netlify + input hidden + success</h3>
+            <form name="laverda" method="post" data-netlify="true" action="/success/">
+              <input type="hidden" name="form-name" value="laverda" />
+              <div className="form-group">
+                <input name="name" type="text" className="form-control" id="exampleInputName" placeholder="Name" />
+              </div>
+              <div className="form-group">
+                <input name="email" type="email" className="form-control" id="exampleInputEmail" placeholder="E-mail" />
+              </div>
+              <div className="form-group">
+                <textarea name="message" className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Textarea"></textarea>
+              </div>
+              <button type="submit" className="btn btn-gatsby">Send Now</button>
+            </form>
+          </div>
+
+          <div className="col-md-6 mb-5">
             <h3>contact</h3>
             <h3>input hidden + action=success</h3>
             <form name="contact" method="post" action="/success/">
@@ -72,80 +90,10 @@ const Contact = () => {
           </div>
 
           <div className="col-md-6 mb-5">
-            <h3>contact4/5</h3>
-            <h3>Tag data-netlify + success</h3>
-            <form name="contact45" method="post" data-netlify="true" action="/success/">
-              <div className="form-group">
-                <input name="name" type="text" className="form-control" id="exampleInputName" placeholder="Name" />
-              </div>
-              <div className="form-group">
-                <input name="email" type="email" className="form-control" id="exampleInputEmail" placeholder="E-mail" />
-              </div>
-              <div className="form-group">
-                <textarea name="message" className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Textarea"></textarea>
-              </div>
-              <button type="submit" className="btn btn-gatsby">Send</button>
-            </form>
-          </div>
-
-          <div className="col-md-6 mb-5">
             <h3>contact4</h3>
             <h3>Tag data-netlify + input hidden + success</h3>
             <form name="contact4" method="post" data-netlify="true" action="/success/">
               <input type="hidden" name="form-name" value="contact" />
-              <div className="form-group">
-                <input name="name" type="text" className="form-control" id="exampleInputName" placeholder="Name" />
-              </div>
-              <div className="form-group">
-                <input name="email" type="email" className="form-control" id="exampleInputEmail" placeholder="E-mail" />
-              </div>
-              <div className="form-group">
-                <textarea name="message" className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Textarea"></textarea>
-              </div>
-              <button type="submit" className="btn btn-gatsby">Send</button>
-            </form>
-          </div>
-
-          <div className="col-md-6 mb-5">
-            <h3>contact5</h3>
-            <h3>Only input hidden complete</h3>
-            <form name="contact5" method="post">
-              <input type="hidden" name="contact5" value="contact" />
-              <div className="form-group">
-                <input name="name" type="text" className="form-control" id="exampleInputName" placeholder="Name" />
-              </div>
-              <div className="form-group">
-                <input name="email" type="email" className="form-control" id="exampleInputEmail" placeholder="E-mail" />
-              </div>
-              <div className="form-group">
-                <textarea name="message" className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Textarea"></textarea>
-              </div>
-              <button type="submit" className="btn btn-gatsby">Send</button>
-            </form>
-          </div>
-
-          <div className="col-md-6 mb-5">
-            <h3>contact6</h3>
-            <h3>input hidden solo</h3>
-            <form name="contact6" method="post">
-              <input type="hidden" />
-              <div className="form-group">
-                <input name="name" type="text" className="form-control" id="exampleInputName" placeholder="Name" />
-              </div>
-              <div className="form-group">
-                <input name="email" type="email" className="form-control" id="exampleInputEmail" placeholder="E-mail" />
-              </div>
-              <div className="form-group">
-                <textarea name="message" className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Textarea"></textarea>
-              </div>
-              <button type="submit" className="btn btn-gatsby">Send</button>
-            </form>
-          </div>
-
-          <div className="col-md-6 mb-5">
-            <h3>contact7</h3>
-            <h3>CLEAR</h3>
-            <form name="contact7" method="post">
               <div className="form-group">
                 <input name="name" type="text" className="form-control" id="exampleInputName" placeholder="Name" />
               </div>
